@@ -9,8 +9,159 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.oneilldavid.dartscoreboard.MainActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher" />
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_1"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/ic_launcher"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_2"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/ic_launcher"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_3"
+            android:layout_row="0"
+            android:layout_column="5"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/ic_launcher"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_4"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/ic_launcher"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_5"
+            android:layout_row="0"
+            android:layout_column="9"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="20px"
+            android:src="@drawable/ic_launcher"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_1_x2"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/ic_launcher_half"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_2_x2"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/ic_launcher_half"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_3_x2"
+            android:layout_row="1"
+            android:layout_column="5"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/ic_launcher_half"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_4_x2"
+            android:layout_row="1"
+            android:layout_column="7"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/ic_launcher_half"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_5_x2"
+            android:layout_row="1"
+            android:layout_column="9"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="20px"
+            android:src="@drawable/ic_launcher_half"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_1_x3"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/ic_launcher_half"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_2_x3"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/ic_launcher_half"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_3_x3"
+            android:layout_row="2"
+            android:layout_column="5"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/ic_launcher_half"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_4_x3"
+            android:layout_row="2"
+            android:layout_column="7"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/ic_launcher_half"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_5_x3"
+            android:layout_row="2"
+            android:layout_column="9"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="20px"
+            android:src="@drawable/ic_launcher_half"/>
+
+
+
+    </GridLayout>
+
+
+
+
+
 </RelativeLayout>
