@@ -23,7 +23,7 @@ public class MainActivity extends ActionBarActivity {
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context,ScoreActivity.class);
+                Intent intent = new Intent(MainActivity.this,ScoreActivity.class);
             }
         });
     }
