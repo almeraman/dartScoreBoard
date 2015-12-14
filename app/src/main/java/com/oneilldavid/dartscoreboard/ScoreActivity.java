@@ -8,10 +8,11 @@ import android.support.v7.app.ActionBarActivity;
  */
 public class ScoreActivity extends ActionBarActivity {
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // set activity layout
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score);
+
     }
 
 }
