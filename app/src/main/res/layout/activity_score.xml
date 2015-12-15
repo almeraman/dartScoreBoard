@@ -11,7 +11,7 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -269,7 +269,8 @@
                 android:layout_marginRight="30dp"
                 android:contentDescription="@string/number_buttons"
                 android:src="@drawable/num3"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -282,7 +283,8 @@
                 android:layout_marginStart="30dp"
                 android:contentDescription="@string/number_buttons"
                 android:src="@drawable/num2"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -293,7 +295,8 @@
                 android:layout_toStartOf="@+id/num2"
                 android:contentDescription="@string/number_buttons"
                 android:src="@drawable/num1"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -306,7 +309,8 @@
                 android:layout_marginEnd="30dp"
                 android:contentDescription="@string/number_buttons"
                 android:src="@drawable/num4"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -317,7 +321,8 @@
                 android:layout_toEndOf="@+id/num4"
                 android:contentDescription="@string/number_buttons"
                 android:src="@drawable/num5"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -328,7 +333,8 @@
                 android:layout_toStartOf="@+id/num2"
                 android:src="@drawable/times2_green"
                 android:contentDescription="@string/number_buttons"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -339,7 +345,8 @@
                 android:layout_alignStart="@+id/num2"
                 android:src="@drawable/times2_green"
                 android:contentDescription="@string/number_buttons"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -350,7 +357,8 @@
                 android:layout_alignStart="@+id/num3"
                 android:src="@drawable/times2_green"
                 android:contentDescription="@string/number_buttons"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -361,7 +369,8 @@
                 android:layout_toEndOf="@+id/num3"
                 android:src="@drawable/times2_green"
                 android:contentDescription="@string/number_buttons"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -372,7 +381,8 @@
                 android:layout_alignStart="@+id/num5"
                 android:src="@drawable/times2_green"
                 android:contentDescription="@string/number_buttons"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -382,7 +392,8 @@
                 android:layout_alignRight="@+id/num1_x2"
                 android:layout_alignEnd="@+id/num1_x2"
                 android:src="@drawable/times3_red"
-                android:contentDescription="@string/number_buttons" />
+                android:contentDescription="@string/number_buttons"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -392,7 +403,8 @@
                 android:layout_alignRight="@+id/num2_x2"
                 android:layout_alignEnd="@+id/num2_x2"
                 android:src="@drawable/times3_red"
-                android:contentDescription="@string/number_buttons" />
+                android:contentDescription="@string/number_buttons"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -402,7 +414,8 @@
                 android:layout_alignRight="@+id/num3_x2"
                 android:layout_alignEnd="@+id/num3_x2"
                 android:src="@drawable/times3_red"
-                android:contentDescription="@string/number_buttons" />
+                android:contentDescription="@string/number_buttons"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -412,7 +425,8 @@
                 android:layout_alignLeft="@+id/num4_x2"
                 android:layout_alignStart="@+id/num4_x2"
                 android:src="@drawable/times3_red"
-                android:contentDescription="@string/number_buttons" />
+                android:contentDescription="@string/number_buttons"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -422,7 +436,8 @@
                 android:layout_alignLeft="@+id/num5_x2"
                 android:layout_alignStart="@+id/num5_x2"
                 android:src="@drawable/times3_red"
-                android:contentDescription="@string/number_buttons" />
+                android:contentDescription="@string/number_buttons"
+                android:onClick="clicked" />
 
 
 
@@ -436,7 +451,8 @@
                 android:layout_marginTop="20dp"
                 android:contentDescription="@string/number_buttons"
                 android:src="@drawable/num6"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -447,7 +463,8 @@
                 android:layout_alignTop="@+id/num6"
                 android:layout_alignLeft="@+id/num2_x3"
                 android:layout_alignStart="@+id/num2_x3"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -458,7 +475,8 @@
                 android:layout_alignEnd="@+id/num3_x3"
                 android:contentDescription="@string/number_buttons"
                 android:src="@drawable/num8"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -469,7 +487,8 @@
                 android:layout_alignEnd="@+id/num4_x3"
                 android:contentDescription="@string/number_buttons"
                 android:src="@drawable/num9"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -480,7 +499,8 @@
                 android:layout_above="@+id/num10_x2"
                 android:layout_alignLeft="@+id/num10_x2"
                 android:layout_alignStart="@+id/num10_x2"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -491,7 +511,8 @@
                 android:layout_alignEnd="@+id/num6"
                 android:contentDescription="@string/number_buttons"
                 android:src="@drawable/times2_green"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -502,7 +523,8 @@
                 android:contentDescription="@string/number_buttons"
                 android:src="@drawable/times2_green"
                 android:layout_below="@+id/num6"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -513,7 +535,8 @@
                 android:layout_alignEnd="@+id/num8"
                 android:contentDescription="@string/number_buttons"
                 android:src="@drawable/times2_green"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -524,7 +547,8 @@
                 android:layout_above="@+id/num9_x3"
                 android:layout_alignLeft="@+id/num9_x3"
                 android:layout_alignStart="@+id/num9_x3"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -535,7 +559,8 @@
                 android:layout_alignRight="@+id/num5_x3"
                 android:layout_alignEnd="@+id/num5_x3"
                 android:layout_below="@+id/num7"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -545,7 +570,8 @@
                 android:src="@drawable/times3_red"
                 android:layout_alignTop="@+id/num7_x3"
                 android:layout_alignLeft="@+id/num6_x2"
-                android:layout_alignStart="@+id/num6_x2" />
+                android:layout_alignStart="@+id/num6_x2"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -555,7 +581,8 @@
                 android:src="@drawable/times3_red"
                 android:layout_alignTop="@+id/num8_x3"
                 android:layout_alignLeft="@+id/num7_x2"
-                android:layout_alignStart="@+id/num7_x2" />
+                android:layout_alignStart="@+id/num7_x2"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -565,7 +592,8 @@
                 android:src="@drawable/times3_red"
                 android:layout_below="@+id/num8_x2"
                 android:layout_alignLeft="@+id/num8_x2"
-                android:layout_alignStart="@+id/num8_x2" />
+                android:layout_alignStart="@+id/num8_x2"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -575,7 +603,8 @@
                 android:src="@drawable/times3_red"
                 android:layout_below="@+id/num10_x2"
                 android:layout_alignLeft="@+id/num9"
-                android:layout_alignStart="@+id/num9" />
+                android:layout_alignStart="@+id/num9"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -585,7 +614,8 @@
                 android:src="@drawable/times3_red"
                 android:layout_alignTop="@+id/num9_x3"
                 android:layout_alignLeft="@+id/num10_x2"
-                android:layout_alignStart="@+id/num10_x2" />
+                android:layout_alignStart="@+id/num10_x2"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -597,7 +627,8 @@
                 android:layout_alignEnd="@+id/num6_x3"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/num11"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -608,7 +639,8 @@
                 android:layout_alignRight="@+id/num7_x3"
                 android:layout_alignEnd="@+id/num7_x3"
                 android:src="@drawable/num12"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -619,7 +651,8 @@
                 android:layout_alignRight="@+id/num8_x3"
                 android:layout_alignEnd="@+id/num8_x3"
                 android:src="@drawable/num13"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -630,7 +663,8 @@
                 android:layout_alignLeft="@+id/num9_x3"
                 android:layout_alignStart="@+id/num9_x3"
                 android:src="@drawable/num14"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -641,7 +675,8 @@
                 android:layout_alignLeft="@+id/num10_x3"
                 android:layout_alignStart="@+id/num10_x3"
                 android:src="@drawable/num15"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -652,7 +687,8 @@
                 android:layout_alignRight="@+id/num11"
                 android:layout_alignEnd="@+id/num11"
                 android:src="@drawable/times2_green"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -663,7 +699,8 @@
                 android:layout_alignRight="@+id/num12"
                 android:layout_alignEnd="@+id/num12"
                 android:src="@drawable/times2_green"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -674,7 +711,8 @@
                 android:layout_alignTop="@+id/num12_x2"
                 android:layout_alignLeft="@+id/num13"
                 android:layout_alignStart="@+id/num13"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -685,7 +723,8 @@
                 android:layout_alignRight="@+id/num14"
                 android:layout_alignEnd="@+id/num14"
                 android:src="@drawable/times2_green"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -696,7 +735,8 @@
                 android:layout_above="@+id/num14_x3"
                 android:layout_alignLeft="@+id/num15"
                 android:layout_alignStart="@+id/num15"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -706,7 +746,8 @@
                 android:layout_below="@+id/num11_x2"
                 android:layout_alignRight="@+id/num11_x2"
                 android:layout_alignEnd="@+id/num11_x2"
-                android:src="@drawable/times3_red" />
+                android:src="@drawable/times3_red"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -716,7 +757,8 @@
                 android:layout_alignTop="@+id/num11_x3"
                 android:layout_alignRight="@+id/num12_x2"
                 android:layout_alignEnd="@+id/num12_x2"
-                android:src="@drawable/times3_red" />
+                android:src="@drawable/times3_red"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -726,7 +768,8 @@
                 android:src="@drawable/times3_red"
                 android:layout_alignTop="@+id/num12_x3"
                 android:layout_alignLeft="@+id/num13_x2"
-                android:layout_alignStart="@+id/num13_x2" />
+                android:layout_alignStart="@+id/num13_x2"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -736,7 +779,8 @@
                 android:src="@drawable/times3_red"
                 android:layout_alignTop="@+id/num13_x3"
                 android:layout_alignLeft="@+id/num14_x2"
-                android:layout_alignStart="@+id/num14_x2" />
+                android:layout_alignStart="@+id/num14_x2"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -746,7 +790,8 @@
                 android:src="@drawable/times3_red"
                 android:layout_below="@+id/num15_x2"
                 android:layout_alignLeft="@+id/num15_x2"
-                android:layout_alignStart="@+id/num15_x2" />
+                android:layout_alignStart="@+id/num15_x2"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -758,7 +803,8 @@
                 android:layout_alignEnd="@+id/num11_x3"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/num16"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -769,7 +815,8 @@
                 android:layout_alignTop="@+id/num16"
                 android:layout_alignLeft="@+id/num12_x3"
                 android:layout_alignStart="@+id/num12_x3"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -780,7 +827,8 @@
                 android:layout_alignRight="@+id/num13_x3"
                 android:layout_alignEnd="@+id/num13_x3"
                 android:src="@drawable/num18"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -791,7 +839,8 @@
                 android:layout_alignTop="@+id/num18"
                 android:layout_alignLeft="@+id/num14_x3"
                 android:layout_alignStart="@+id/num14_x3"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -802,7 +851,8 @@
                 android:layout_alignTop="@+id/num19"
                 android:layout_alignLeft="@+id/num15_x3"
                 android:layout_alignStart="@+id/num15_x3"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -813,7 +863,8 @@
                 android:layout_alignRight="@+id/num16"
                 android:layout_alignEnd="@+id/num16"
                 android:src="@drawable/times2_green"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -824,7 +875,8 @@
                 android:layout_below="@+id/num17"
                 android:layout_alignLeft="@+id/num17"
                 android:layout_alignStart="@+id/num17"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -835,7 +887,8 @@
                 android:layout_below="@+id/num18"
                 android:layout_alignLeft="@+id/num18"
                 android:layout_alignStart="@+id/num18"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -846,7 +899,8 @@
                 android:layout_below="@+id/num19"
                 android:layout_alignLeft="@+id/num19"
                 android:layout_alignStart="@+id/num19"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -857,7 +911,8 @@
                 android:layout_below="@+id/num20"
                 android:layout_alignLeft="@+id/num20"
                 android:layout_alignStart="@+id/num20"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -867,7 +922,8 @@
                 android:layout_below="@+id/num16_x2"
                 android:layout_alignLeft="@+id/num16_x2"
                 android:layout_alignStart="@+id/num16_x2"
-                android:src="@drawable/times3_red" />
+                android:src="@drawable/times3_red"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -877,7 +933,8 @@
                 android:src="@drawable/times3_red"
                 android:layout_alignTop="@+id/num16_x3"
                 android:layout_alignLeft="@+id/num17_x2"
-                android:layout_alignStart="@+id/num17_x2" />
+                android:layout_alignStart="@+id/num17_x2"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -887,7 +944,8 @@
                 android:src="@drawable/times3_red"
                 android:layout_alignTop="@+id/num17_x3"
                 android:layout_alignLeft="@+id/num18_x2"
-                android:layout_alignStart="@+id/num18_x2" />
+                android:layout_alignStart="@+id/num18_x2"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -897,7 +955,8 @@
                 android:src="@drawable/times3_red"
                 android:layout_alignTop="@+id/num18_x3"
                 android:layout_alignLeft="@+id/num19_x2"
-                android:layout_alignStart="@+id/num19_x2" />
+                android:layout_alignStart="@+id/num19_x2"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -907,7 +966,8 @@
                 android:src="@drawable/times3_red"
                 android:layout_alignTop="@+id/num19_x3"
                 android:layout_alignLeft="@+id/num20_x2"
-                android:layout_alignStart="@+id/num20_x2" />
+                android:layout_alignStart="@+id/num20_x2"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -918,7 +978,8 @@
                 android:layout_toRightOf="@+id/num16_x3"
                 android:layout_toEndOf="@+id/num16_x3"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/num25" />
+                android:src="@drawable/num25"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -928,7 +989,8 @@
                 android:layout_alignTop="@+id/number25"
                 android:layout_alignLeft="@+id/num18_x3"
                 android:layout_alignStart="@+id/num18_x3"
-                android:src="@drawable/num50" />
+                android:src="@drawable/num50"
+                android:onClick="clicked" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -939,7 +1001,7 @@
                 android:layout_alignTop="@+id/number50"
                 android:layout_toLeftOf="@+id/num20_x3"
                 android:layout_toStartOf="@+id/num20_x3"
-                />
+                android:onClick="clicked" />
     </RelativeLayout>
     </LinearLayout>
 
