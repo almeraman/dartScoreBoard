@@ -43,7 +43,7 @@
                 android:textColor="@android:color/white"
                 android:textStyle="normal|bold|italic"
                 android:id="@+id/p1_score"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_below="@+id/leg_change"
                 android:layout_toRightOf="@+id/leg_change"
                 android:contentDescription="@string/number_fields"
@@ -100,7 +100,7 @@
                 android:layout_alignLeft="@+id/p1_score"
                 android:layout_alignStart="@+id/p1_score"
                 android:contentDescription="@string/number_fields"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="10dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -113,7 +113,7 @@
                 android:layout_alignLeft="@+id/p1_dart_avg"
                 android:layout_alignStart="@+id/p1_dart_avg"
                 android:contentDescription="@string/number_fields"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="10dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -201,7 +201,7 @@
                 android:layout_alignLeft="@+id/leg"
                 android:layout_alignStart="@+id/leg"
                 android:contentDescription="@string/number_fields"
-                android:layout_marginBottom="30dp" />
+                android:layout_marginBottom="10dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -251,758 +251,318 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
-        <RelativeLayout
+        android:id="@+id/bottom_half"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            >
+            android:columnCount="5"
+            android:rowCount="7">
 
-            <ImageView
+            <Button
+                android:layout_columnSpan="2"
+                android:text="X 2"
+                android:id="@+id/times2"
+                android:layout_gravity="fill"
+                android:layout_column="0"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num3"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/num3"
                 android:layout_marginBottom="5dp"
-                android:onClick="clicked"/>
+                android:layout_marginLeft="15dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num2"
-                android:layout_alignParentTop="true"
-                android:layout_toLeftOf="@+id/num3"
-                android:layout_toStartOf="@+id/num3"
-                android:layout_marginLeft="30dp"
-                android:layout_marginStart="30dp"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/num2"
+            <Button
+                android:layout_column="3"
+                android:text="X 3"
+                android:id="@+id/times3"
+                android:layout_width="132dp"
                 android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
+                android:layout_columnSpan="2"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
+                android:text="1"
                 android:id="@+id/num1"
-                android:layout_alignParentTop="true"
-                android:layout_toLeftOf="@+id/num2"
-                android:layout_toStartOf="@+id/num2"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/num1"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_width="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
+                android:text="2"
+                android:id="@+id/num2"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_width="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
+            <Button
+                android:text="3"
+                android:id="@+id/num3"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:layout_width="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
+            <Button
+                android:text="4"
                 android:id="@+id/num4"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/num3"
-                android:layout_toEndOf="@+id/num3"
-                android:layout_marginRight="30dp"
-                android:layout_marginEnd="30dp"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/num4"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="3"
+                android:layout_row="1"
+                android:layout_width="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
+            <Button
+                android:text="5"
                 android:id="@+id/num5"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/num4"
-                android:layout_toEndOf="@+id/num4"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/num5"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="4"
+                android:layout_row="1"
+                android:layout_width="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num1_x2"
-                android:layout_below="@+id/num1"
-                android:layout_toLeftOf="@+id/num2"
-                android:layout_toStartOf="@+id/num2"
-                android:src="@drawable/times2_green"
-                android:contentDescription="@string/number_buttons"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num2_x2"
-                android:layout_alignTop="@+id/num1_x2"
-                android:layout_alignLeft="@+id/num2"
-                android:layout_alignStart="@+id/num2"
-                android:src="@drawable/times2_green"
-                android:contentDescription="@string/number_buttons"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num3_x2"
-                android:layout_alignTop="@+id/num2_x2"
-                android:layout_alignLeft="@+id/num3"
-                android:layout_alignStart="@+id/num3"
-                android:src="@drawable/times2_green"
-                android:contentDescription="@string/number_buttons"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num4_x2"
-                android:layout_below="@+id/num4"
-                android:layout_toRightOf="@+id/num3"
-                android:layout_toEndOf="@+id/num3"
-                android:src="@drawable/times2_green"
-                android:contentDescription="@string/number_buttons"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num5_x2"
-                android:layout_alignTop="@+id/num4_x2"
-                android:layout_alignLeft="@+id/num5"
-                android:layout_alignStart="@+id/num5"
-                android:src="@drawable/times2_green"
-                android:contentDescription="@string/number_buttons"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num1_x3"
-                android:layout_below="@+id/num1_x2"
-                android:layout_alignRight="@+id/num1_x2"
-                android:layout_alignEnd="@+id/num1_x2"
-                android:src="@drawable/times3_red"
-                android:contentDescription="@string/number_buttons"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num2_x3"
-                android:layout_alignTop="@+id/num1_x3"
-                android:layout_alignRight="@+id/num2_x2"
-                android:layout_alignEnd="@+id/num2_x2"
-                android:src="@drawable/times3_red"
-                android:contentDescription="@string/number_buttons"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num3_x3"
-                android:layout_alignTop="@+id/num2_x3"
-                android:layout_alignRight="@+id/num3_x2"
-                android:layout_alignEnd="@+id/num3_x2"
-                android:src="@drawable/times3_red"
-                android:contentDescription="@string/number_buttons"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num4_x3"
-                android:layout_below="@+id/num4_x2"
-                android:layout_alignLeft="@+id/num4_x2"
-                android:layout_alignStart="@+id/num4_x2"
-                android:src="@drawable/times3_red"
-                android:contentDescription="@string/number_buttons"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num5_x3"
-                android:layout_alignBottom="@+id/num4_x3"
-                android:layout_alignLeft="@+id/num5_x2"
-                android:layout_alignStart="@+id/num5_x2"
-                android:src="@drawable/times3_red"
-                android:contentDescription="@string/number_buttons"
-                android:onClick="clicked" />
-
-
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
+                android:text="6"
                 android:id="@+id/num6"
-                android:layout_below="@+id/num1_x3"
-                android:layout_alignRight="@+id/num1_x3"
-                android:layout_alignEnd="@+id/num1_x3"
-                android:layout_marginTop="20dp"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/num6"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:layout_width="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
+                android:text="7"
                 android:id="@+id/num7"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/num7"
-                android:layout_alignTop="@+id/num6"
-                android:layout_alignLeft="@+id/num2_x3"
-                android:layout_alignStart="@+id/num2_x3"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:layout_width="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
+            <Button
+                android:text="8"
                 android:id="@+id/num8"
-                android:layout_alignTop="@+id/num7"
-                android:layout_alignRight="@+id/num3_x3"
-                android:layout_alignEnd="@+id/num3_x3"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/num8"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:layout_width="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
+            <Button
+                android:text="9"
                 android:id="@+id/num9"
-                android:layout_alignTop="@+id/num8"
-                android:layout_alignRight="@+id/num4_x3"
-                android:layout_alignEnd="@+id/num4_x3"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/num9"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="3"
+                android:layout_row="2"
+                android:layout_width="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
+                android:text="10"
                 android:id="@+id/num10"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/num10"
-                android:layout_above="@+id/num10_x2"
-                android:layout_alignLeft="@+id/num10_x2"
-                android:layout_alignStart="@+id/num10_x2"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="4"
+                android:layout_row="2"
+                android:layout_width="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num6_x2"
-                android:layout_below="@+id/num6"
-                android:layout_alignRight="@+id/num6"
-                android:layout_alignEnd="@+id/num6"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times2_green"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num7_x2"
-                android:layout_alignRight="@+id/num7"
-                android:layout_alignEnd="@+id/num7"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times2_green"
-                android:layout_below="@+id/num6"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num8_x2"
-                android:layout_below="@+id/num7"
-                android:layout_alignRight="@+id/num8"
-                android:layout_alignEnd="@+id/num8"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times2_green"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num9_x2"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times2_green"
-                android:layout_above="@+id/num9_x3"
-                android:layout_alignLeft="@+id/num9_x3"
-                android:layout_alignStart="@+id/num9_x3"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num10_x2"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times2_green"
-                android:layout_alignRight="@+id/num5_x3"
-                android:layout_alignEnd="@+id/num5_x3"
-                android:layout_below="@+id/num7"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num6_x3"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times3_red"
-                android:layout_alignTop="@+id/num7_x3"
-                android:layout_alignLeft="@+id/num6_x2"
-                android:layout_alignStart="@+id/num6_x2"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num7_x3"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times3_red"
-                android:layout_alignTop="@+id/num8_x3"
-                android:layout_alignLeft="@+id/num7_x2"
-                android:layout_alignStart="@+id/num7_x2"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num8_x3"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times3_red"
-                android:layout_below="@+id/num8_x2"
-                android:layout_alignLeft="@+id/num8_x2"
-                android:layout_alignStart="@+id/num8_x2"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num9_x3"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times3_red"
-                android:layout_below="@+id/num10_x2"
-                android:layout_alignLeft="@+id/num9"
-                android:layout_alignStart="@+id/num9"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num10_x3"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times3_red"
-                android:layout_alignTop="@+id/num9_x3"
-                android:layout_alignLeft="@+id/num10_x2"
-                android:layout_alignStart="@+id/num10_x2"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
+                android:text="11"
                 android:id="@+id/num11"
-                android:contentDescription="@string/number_buttons"
-                android:layout_below="@+id/num6_x3"
-                android:layout_alignRight="@+id/num6_x3"
-                android:layout_alignEnd="@+id/num6_x3"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/num11"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:layout_width="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
+                android:text="12"
                 android:id="@+id/num12"
-                android:contentDescription="@string/number_buttons"
-                android:layout_alignTop="@+id/num11"
-                android:layout_alignRight="@+id/num7_x3"
-                android:layout_alignEnd="@+id/num7_x3"
-                android:src="@drawable/num12"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:layout_width="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
+            <Button
+                android:text="13"
                 android:id="@+id/num13"
-                android:contentDescription="@string/number_buttons"
-                android:layout_alignTop="@+id/num12"
-                android:layout_alignRight="@+id/num8_x3"
-                android:layout_alignEnd="@+id/num8_x3"
-                android:src="@drawable/num13"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="2"
+                android:layout_row="3"
+                android:layout_width="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
+            <Button
+                android:text="14"
                 android:id="@+id/num14"
-                android:contentDescription="@string/number_buttons"
-                android:layout_alignTop="@+id/num13"
-                android:layout_alignLeft="@+id/num9_x3"
-                android:layout_alignStart="@+id/num9_x3"
-                android:src="@drawable/num14"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="3"
+                android:layout_row="3"
+                android:layout_width="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
+            <Button
+                android:text="15"
                 android:id="@+id/num15"
-                android:contentDescription="@string/number_buttons"
-                android:layout_alignTop="@+id/num14"
-                android:layout_alignLeft="@+id/num10_x3"
-                android:layout_alignStart="@+id/num10_x3"
-                android:src="@drawable/num15"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="4"
+                android:layout_row="3"
+                android:layout_width="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num11_x2"
-                android:contentDescription="@string/number_buttons"
-                android:layout_below="@+id/num11"
-                android:layout_alignRight="@+id/num11"
-                android:layout_alignEnd="@+id/num11"
-                android:src="@drawable/times2_green"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num12_x2"
-                android:contentDescription="@string/number_buttons"
-                android:layout_below="@+id/num11"
-                android:layout_alignRight="@+id/num12"
-                android:layout_alignEnd="@+id/num12"
-                android:src="@drawable/times2_green"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num13_x2"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times2_green"
-                android:layout_alignTop="@+id/num12_x2"
-                android:layout_alignLeft="@+id/num13"
-                android:layout_alignStart="@+id/num13"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num14_x2"
-                android:contentDescription="@string/number_buttons"
-                android:layout_alignTop="@+id/num13_x2"
-                android:layout_alignRight="@+id/num14"
-                android:layout_alignEnd="@+id/num14"
-                android:src="@drawable/times2_green"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num15_x2"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times2_green"
-                android:layout_above="@+id/num14_x3"
-                android:layout_alignLeft="@+id/num15"
-                android:layout_alignStart="@+id/num15"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num11_x3"
-                android:contentDescription="@string/number_buttons"
-                android:layout_below="@+id/num11_x2"
-                android:layout_alignRight="@+id/num11_x2"
-                android:layout_alignEnd="@+id/num11_x2"
-                android:src="@drawable/times3_red"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num12_x3"
-                android:contentDescription="@string/number_buttons"
-                android:layout_alignTop="@+id/num11_x3"
-                android:layout_alignRight="@+id/num12_x2"
-                android:layout_alignEnd="@+id/num12_x2"
-                android:src="@drawable/times3_red"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num13_x3"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times3_red"
-                android:layout_alignTop="@+id/num12_x3"
-                android:layout_alignLeft="@+id/num13_x2"
-                android:layout_alignStart="@+id/num13_x2"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num14_x3"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times3_red"
-                android:layout_alignTop="@+id/num13_x3"
-                android:layout_alignLeft="@+id/num14_x2"
-                android:layout_alignStart="@+id/num14_x2"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num15_x3"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times3_red"
-                android:layout_below="@+id/num15_x2"
-                android:layout_alignLeft="@+id/num15_x2"
-                android:layout_alignStart="@+id/num15_x2"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
+                android:text="16"
                 android:id="@+id/num16"
-                android:contentDescription="@string/number_buttons"
-                android:layout_below="@+id/num11_x3"
-                android:layout_alignRight="@+id/num11_x3"
-                android:layout_alignEnd="@+id/num11_x3"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/num16"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="0"
+                android:layout_row="4"
+                android:layout_width="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
+                android:text="17"
                 android:id="@+id/num17"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/num17"
-                android:layout_alignTop="@+id/num16"
-                android:layout_alignLeft="@+id/num12_x3"
-                android:layout_alignStart="@+id/num12_x3"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="1"
+                android:layout_row="4"
+                android:layout_width="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
+                android:text="18"
                 android:id="@+id/num18"
-                android:contentDescription="@string/number_buttons"
-                android:layout_alignTop="@+id/num17"
-                android:layout_alignRight="@+id/num13_x3"
-                android:layout_alignEnd="@+id/num13_x3"
-                android:src="@drawable/num18"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="2"
+                android:layout_row="4"
+                android:layout_width="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
+            <Button
+                android:text="19"
                 android:id="@+id/num19"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/num19"
-                android:layout_alignTop="@+id/num18"
-                android:layout_alignLeft="@+id/num14_x3"
-                android:layout_alignStart="@+id/num14_x3"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="3"
+                android:layout_row="4"
+                android:layout_width="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
+            <Button
+                android:text="20"
                 android:id="@+id/num20"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/num20"
-                android:layout_alignTop="@+id/num19"
-                android:layout_alignLeft="@+id/num15_x3"
-                android:layout_alignStart="@+id/num15_x3"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_column="4"
+                android:layout_row="4"
+                android:layout_width="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
+
+            <Button
+                android:layout_columnSpan="2"
+                android:text="25"
+                android:id="@+id/num25"
+                android:layout_gravity="fill"
+                android:layout_column="0"
+                android:layout_width="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
+                android:layout_marginLeft="15dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num16_x2"
-                android:contentDescription="@string/number_buttons"
-                android:layout_below="@+id/num16"
-                android:layout_alignRight="@+id/num16"
-                android:layout_alignEnd="@+id/num16"
-                android:src="@drawable/times2_green"
+            <Button
+                android:layout_column="3"
+                android:text="BULL"
+                android:id="@+id/num50"
+                android:layout_width="132dp"
                 android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
+                android:layout_columnSpan="2"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num17_x2"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times2_green"
-                android:layout_below="@+id/num17"
-                android:layout_alignLeft="@+id/num17"
-                android:layout_alignStart="@+id/num17"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num18_x2"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times2_green"
-                android:layout_below="@+id/num18"
-                android:layout_alignLeft="@+id/num18"
-                android:layout_alignStart="@+id/num18"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num19_x2"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times2_green"
-                android:layout_below="@+id/num19"
-                android:layout_alignLeft="@+id/num19"
-                android:layout_alignStart="@+id/num19"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num20_x2"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times2_green"
-                android:layout_below="@+id/num20"
-                android:layout_alignLeft="@+id/num20"
-                android:layout_alignStart="@+id/num20"
-                android:layout_marginBottom="5dp"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num16_x3"
-                android:contentDescription="@string/number_buttons"
-                android:layout_below="@+id/num16_x2"
-                android:layout_alignLeft="@+id/num16_x2"
-                android:layout_alignStart="@+id/num16_x2"
-                android:src="@drawable/times3_red"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num17_x3"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times3_red"
-                android:layout_alignTop="@+id/num16_x3"
-                android:layout_alignLeft="@+id/num17_x2"
-                android:layout_alignStart="@+id/num17_x2"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num18_x3"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times3_red"
-                android:layout_alignTop="@+id/num17_x3"
-                android:layout_alignLeft="@+id/num18_x2"
-                android:layout_alignStart="@+id/num18_x2"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num19_x3"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times3_red"
-                android:layout_alignTop="@+id/num18_x3"
-                android:layout_alignLeft="@+id/num19_x2"
-                android:layout_alignStart="@+id/num19_x2"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num20_x3"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/times3_red"
-                android:layout_alignTop="@+id/num19_x3"
-                android:layout_alignLeft="@+id/num20_x2"
-                android:layout_alignStart="@+id/num20_x2"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/number25"
-                android:contentDescription="@string/number_buttons"
-                android:layout_below="@+id/num16_x3"
-                android:layout_toRightOf="@+id/num16_x3"
-                android:layout_toEndOf="@+id/num16_x3"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/num25"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/number50"
-                android:contentDescription="@string/number_buttons"
-                android:layout_alignTop="@+id/number25"
-                android:layout_alignLeft="@+id/num18_x3"
-                android:layout_alignStart="@+id/num18_x3"
-                android:src="@drawable/num50"
-                android:onClick="clicked" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
+                android:layout_columnSpan="2"
+                android:text="MISS"
                 android:id="@+id/miss"
-                android:contentDescription="@string/number_buttons"
-                android:src="@drawable/miss"
-                android:layout_alignTop="@+id/number50"
-                android:layout_toLeftOf="@+id/num20_x3"
-                android:layout_toStartOf="@+id/num20_x3"
-                android:onClick="clicked" />
-    </RelativeLayout>
+                android:layout_gravity="fill"
+                android:layout_column="0"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
+
+            <Button
+                android:layout_column="3"
+                android:text="SUBMIT"
+                android:id="@+id/submit"
+                android:layout_width="132dp"
+                android:layout_marginBottom="5dp"
+                android:layout_columnSpan="2"
+                android:onClick="clicked"
+                android:layout_height="40dp" />
+
+
+        </GridLayout>
+
     </LinearLayout>
 
 
