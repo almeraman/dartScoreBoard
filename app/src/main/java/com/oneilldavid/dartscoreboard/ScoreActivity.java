@@ -1,5 +1,6 @@
 package com.oneilldavid.dartscoreboard;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
@@ -28,7 +29,6 @@ public class ScoreActivity extends ActionBarActivity {
         to1 = new ThreeOOneActivity();
 
         assignButtons();
-
 
     }
 
@@ -72,6 +72,7 @@ public class ScoreActivity extends ActionBarActivity {
         check3 = (TextView) findViewById(R.id.check3);
         updateP1Score(to1.getFirstVals());
         updateP2Score(to1.getFirstVals());
+
     }
 
 
@@ -79,63 +80,83 @@ public class ScoreActivity extends ActionBarActivity {
         switch (view.getId()) {
             case R.id.num1:
                 score = 1;
+                num1.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num2:
                 score = 2;
+                num2.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num3:
                 score = 3;
+                num3.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num4:
                 score = 4;
+                num4.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num5:
                 score = 5;
+                num5.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num6:
                 score = 6;
+                num6.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num7:
                 score = 7;
+                num7.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num8:
                 score = 8;
+                num8.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num9:
                 score = 9;
+                num9.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num10:
                 score = 10;
+                num10.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num11:
                 score = 11;
+                num11.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num12:
                 score = 12;
+                num12.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num13:
                 score = 13;
+                num13.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num14:
                 score = 14;
+                num14.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num15:
                 score = 15;
+                num15.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num16:
                 score = 16;
+                num16.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num17:
                 score = 17;
+                num17.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num18:
                 score = 18;
+                num18.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num19:
                 score = 19;
+                num19.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num20:
                 score = 20;
+                num20.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num25:
                 updateScores(25);
@@ -148,16 +169,44 @@ public class ScoreActivity extends ActionBarActivity {
                 break;
             case R.id.times2:
                 score = score * 2;
+                times2.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.times3:
                 score = score * 3;
+                times3.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.submit:
                 updateScores(score);
+                resetBuutons();
                 score = 0;
                 break;
         }
 
+    }
+
+    private void resetBuutons() {
+        num1.setBackgroundColor(Color.BLACK);
+        num2.setBackgroundColor(Color.BLACK);
+        num3.setBackgroundColor(Color.BLACK);
+        num4.setBackgroundColor(Color.BLACK);
+        num5.setBackgroundColor(Color.BLACK);
+        num6.setBackgroundColor(Color.BLACK);
+        num7.setBackgroundColor(Color.BLACK);
+        num8.setBackgroundColor(Color.BLACK);
+        num9.setBackgroundColor(Color.BLACK);
+        num10.setBackgroundColor(Color.BLACK);
+        num11.setBackgroundColor(Color.BLACK);
+        num12.setBackgroundColor(Color.BLACK);
+        num13.setBackgroundColor(Color.BLACK);
+        num14.setBackgroundColor(Color.BLACK);
+        num15.setBackgroundColor(Color.BLACK);
+        num16.setBackgroundColor(Color.BLACK);
+        num17.setBackgroundColor(Color.BLACK);
+        num18.setBackgroundColor(Color.BLACK);
+        num19.setBackgroundColor(Color.BLACK);
+        num20.setBackgroundColor(Color.BLACK);
+        times2.setBackgroundColor(Color.GREEN);
+        times3.setBackgroundColor(Color.RED);
     }
 
     private void updateScores(double j) {
