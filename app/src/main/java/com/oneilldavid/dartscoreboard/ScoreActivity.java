@@ -59,6 +59,8 @@ public class ScoreActivity extends ActionBarActivity {
         miss = (Button) findViewById(R.id.miss);
         times2 = (Button)findViewById(R.id.times2);
         times3 = (Button) findViewById(R.id.times3);
+		times2.setEnabled(false);
+		times3.setEnabled(false);
         submit = (Button) findViewById(R.id.submit);
         p1score = (TextView) findViewById(R.id.p1score_change);
         p2score = (TextView) findViewById(R.id.p2score_change);
@@ -79,113 +81,126 @@ public class ScoreActivity extends ActionBarActivity {
     public void clicked(View view) {
         switch (view.getId()) {
             case R.id.num1:
-                score = 1;
+				resetButtons(1);
                 num1.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num2:
-                score = 2;
+                resetButtons(2);
                 num2.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num3:
-                score = 3;
+                resetButtons(3);
                 num3.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num4:
-                score = 4;
+                resetButtons(4);
                 num4.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num5:
-                score = 5;
+                resetButtons(5);
                 num5.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num6:
-                score = 6;
+                resetButtons(6);
                 num6.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num7:
-                score = 7;
+                resetButtons(7);
                 num7.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num8:
-                score = 8;
+                resetButtons(8);
                 num8.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num9:
-                score = 9;
+                resetButtons(9);
                 num9.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num10:
-                score = 10;
+                resetButtons(10);
                 num10.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num11:
-                score = 11;
+                resetButtons(11);
                 num11.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num12:
-                score = 12;
+                resetButtons(12);
                 num12.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num13:
-                score = 13;
+                resetButtons(13);
                 num13.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num14:
-                score = 14;
+                resetButtons(14);
                 num14.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num15:
-                score = 15;
+                resetButtons(15);
                 num15.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num16:
-                score = 16;
+                resetButtons(16);
                 num16.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num17:
-                score = 17;
+                resetButtons(17);
                 num17.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num18:
-                score = 18;
+                resetButtons(18);
                 num18.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num19:
-                score = 19;
+                resetButtons(19);
                 num19.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num20:
-                score = 20;
+                resetButtons(20);
                 num20.setBackgroundColor(Color.BLUE);
                 break;
             case R.id.num25:
                 updateScores(25);
+				resetButtons(0);
+				times2.setEnabled(false);
+				times3.setEnabled(false);
                 break;
             case R.id.num50:
                 updateScores(50);
+				resetButtons(0);
+				times2.setEnabled(false);
+				times3.setEnabled(false);
                 break;
             case R.id.miss:
                 updateScores(0);
+				resetButtons(0);
+				times2.setEnabled(false);
+				times3.setEnabled(false);
                 break;
             case R.id.times2:
                 score = score * 2;
                 times2.setBackgroundColor(Color.BLUE);
+				times3.setEnabled(false);
                 break;
             case R.id.times3:
                 score = score * 3;
                 times3.setBackgroundColor(Color.BLUE);
+				times2.setEnabled(false);
                 break;
             case R.id.submit:
                 updateScores(score);
-                resetBuutons();
-                score = 0;
+                resetButtons(0);
+				times2.setEnabled(false);
+				times3.setEnabled(false);
                 break;
         }
 
     }
 
-    private void resetBuutons() {
-        num1.setBackgroundColor(Color.BLACK);
+	private void resetButtons(int p0)
+	{
+		num1.setBackgroundColor(Color.BLACK);
         num2.setBackgroundColor(Color.BLACK);
         num3.setBackgroundColor(Color.BLACK);
         num4.setBackgroundColor(Color.BLACK);
@@ -205,9 +220,12 @@ public class ScoreActivity extends ActionBarActivity {
         num18.setBackgroundColor(Color.BLACK);
         num19.setBackgroundColor(Color.BLACK);
         num20.setBackgroundColor(Color.BLACK);
-        times2.setBackgroundColor(Color.GREEN);
-        times3.setBackgroundColor(Color.RED);
-    }
+		times2.setBackgroundColor(Color.GREEN);
+		times3.setBackgroundColor(Color.RED);
+		times2.setEnabled(true);
+		times3.setEnabled(true);
+		score = p0;
+	}
 
     private void updateScores(double j) {
         if(playerId == 1) {
