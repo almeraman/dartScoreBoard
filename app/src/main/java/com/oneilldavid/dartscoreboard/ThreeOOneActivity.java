@@ -41,6 +41,7 @@ public class ThreeOOneActivity {
                 setP1ThrowAvg();
                 ScoreActivity.playerId = 2;
                 ScoreActivity.num_throw = 3;
+                ScoreActivity.changeToPlaya2();
             }
             return (int)cp1score;
         } else {
@@ -51,6 +52,7 @@ public class ThreeOOneActivity {
                 setP2ThrowAvg();
                 ScoreActivity.playerId = 1;
                 ScoreActivity.num_throw = 3;
+                ScoreActivity.changeToPlaya1();
             }
             return (int)cp2score;
         }

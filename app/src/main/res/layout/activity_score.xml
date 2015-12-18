@@ -30,10 +30,11 @@
                 android:textColor="@android:color/white"
                 android:textStyle="normal|bold|italic"
                 android:contentDescription="@string/number_fields"
-                android:paddingRight="30dp"
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@+id/player1"
-                android:layout_toEndOf="@+id/player1" />
+                android:layout_toEndOf="@+id/player1"
+                android:layout_marginRight="30dp"
+                android:padding="5dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -149,7 +150,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignLeft="@+id/check3"
                 android:layout_alignStart="@+id/check3"
-                android:layout_marginRight="15dp" />
+                android:layout_marginRight="15dp"
+                android:padding="5dp" />
 
             <TextView
                 android:layout_width="wrap_content"

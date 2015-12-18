@@ -17,6 +17,7 @@ public class ScoreActivity extends ActionBarActivity {
             submit,times2,times3;
     private int score = 0;
     TextView p1score,p2score,leg,p1dartAvg,p1throwAvg,p2dartAvg,p2throwAvg,check1,check2,check3;
+    static TextView playa1,playa2;
     public static int num_throw = 3;
     public static int playerId = 1;
     ThreeOOneActivity to1;
@@ -62,6 +63,8 @@ public class ScoreActivity extends ActionBarActivity {
 		times2.setEnabled(false);
 		times3.setEnabled(false);
         submit = (Button) findViewById(R.id.submit);
+        playa1 = (TextView) findViewById(R.id.player1);
+        playa2 = (TextView) findViewById(R.id.player2);
         p1score = (TextView) findViewById(R.id.p1score_change);
         p2score = (TextView) findViewById(R.id.p2score_change);
         leg = (TextView) findViewById(R.id.leg_change);
@@ -74,7 +77,7 @@ public class ScoreActivity extends ActionBarActivity {
         check3 = (TextView) findViewById(R.id.check3);
         updateP1Score(to1.getFirstVals());
         updateP2Score(to1.getFirstVals());
-
+        changeToPlaya1();
     }
 
 
@@ -247,4 +250,20 @@ public class ScoreActivity extends ActionBarActivity {
         p2throwAvg.setText(""+String.format("%.2f",to1.getP2ThrowAvg()));
     }
 
-}
+    public static void changeToPlaya1() {
+        playa1.setBackgroundColor(Color.WHITE);
+        playa1.setTextColor(Color.BLACK);
+        playa2.setBackgroundColor(Color.BLACK);
+        playa2.setTextColor(Color.WHITE);
+    }
+
+    public static void changeToPlaya2() {
+        playa2.setBackgroundColor(Color.WHITE);
+        playa2.setTextColor(Color.BLACK);
+        playa1.setBackgroundColor(Color.BLACK);
+        playa1.setTextColor(Color.WHITE);
+    }
+
+
+
+}  //end class
