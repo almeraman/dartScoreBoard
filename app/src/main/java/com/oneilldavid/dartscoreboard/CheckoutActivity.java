@@ -16,15 +16,15 @@ public class CheckoutActivity {
 		if(s > 98){
 			c1 = threeDart(s);
 		} else {
-			c2 = twoDart(s);
+			twoDart(s);
 		}
 		return complete;
 	}
 
-	private String twoDart(int s)
+	private void twoDart(int s)
 	{
-		
-		return null;
+			
+	
 	}
 
 	private String threeDart(int s)
@@ -37,9 +37,13 @@ public class CheckoutActivity {
 		} else if (s == 125){
 			holder = "25";
 		} else if (s == 139 || s == 129 || s == 126 || s == 123 || s == 119 || s == 109 || s == 107 || s == 99){
-			
+			holder = "T19";
+			twoDart(s - 57);
+		} else {
+			holder = "T20";
+			twoDart(s -60);
 		}
-		return null;
+		return holder;
 	}
 	
 	
