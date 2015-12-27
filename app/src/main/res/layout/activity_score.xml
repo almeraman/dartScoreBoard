@@ -17,11 +17,12 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        >
+        android:weightSum="1">
         <RelativeLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@android:color/black">
+            android:background="@android:color/black"
+            android:layout_weight="1.09">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -31,11 +32,12 @@
                 android:textColor="@android:color/white"
                 android:textStyle="normal|bold|italic"
                 android:contentDescription="@string/number_fields"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/player1"
-                android:layout_toEndOf="@+id/player1"
                 android:layout_marginRight="30dp"
-                android:padding="5dp" />
+                android:padding="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -148,11 +150,12 @@
                 android:textColor="@android:color/white"
                 android:textStyle="normal|bold|italic"
                 android:contentDescription="@string/number_fields"
-                android:layout_alignParentTop="true"
-                android:layout_alignLeft="@+id/check3"
-                android:layout_alignStart="@+id/check3"
-                android:layout_marginRight="15dp"
-                android:padding="5dp" />
+                android:layout_marginRight="26dp"
+                android:padding="5dp"
+                android:layout_above="@+id/p1_score"
+                android:layout_toLeftOf="@+id/player2"
+                android:layout_toStartOf="@+id/player2"
+                android:layout_marginEnd="26dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -216,39 +219,8 @@
                 android:layout_alignBottom="@+id/checkout"
                 android:contentDescription="@string/number_fields"
                 android:layout_toRightOf="@+id/p1_score"
-                android:layout_toEndOf="@+id/p1_score" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/na"
-                android:id="@+id/check2"
-                android:textColor="@android:color/white"
-                android:textStyle="normal|bold|italic"
-                android:paddingLeft="5dp"
-                android:paddingStart="5dp"
-                android:layout_alignTop="@+id/check1"
-                android:layout_toRightOf="@+id/check1"
-                android:layout_toEndOf="@+id/check1"
-                android:contentDescription="@string/number_fields"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/na"
-                android:id="@+id/check3"
-                android:textColor="@android:color/white"
-                android:textStyle="normal|bold|italic"
-                android:paddingLeft="5dp"
-                android:paddingStart="5dp"
-                android:layout_alignTop="@+id/check2"
-                android:layout_toRightOf="@+id/check2"
-                android:layout_toEndOf="@+id/check2"
-                android:contentDescription="@string/number_fields"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"/>
+                android:layout_alignRight="@+id/p2throw_avg_change"
+                android:layout_alignEnd="@+id/p2throw_avg_change" />
 
         </RelativeLayout>
 
