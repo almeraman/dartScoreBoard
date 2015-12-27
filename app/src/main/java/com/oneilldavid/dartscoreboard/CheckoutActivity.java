@@ -2,7 +2,7 @@ package com.oneilldavid.dartscoreboard;
 
 public class CheckoutActivity {
 	
-	int score;
+	int score,len;
 	boolean noOut = false;
     int [] scores = new int[110];
     String [] checkout = {"20 D20","T15 D8","T10 D16","T13 D12","T16 D8","T19 D4","T10 D18","T17 D8","T20 D4","T15 D12","T10 D20","T13 D16","T16 D12","T19 D8","T14 D16","T17 D12","T20 D8","T19 D10","T18 D12","T13 D20",
@@ -15,7 +15,7 @@ public class CheckoutActivity {
 
 	public CheckoutActivity(){
 
-        int len = scores.length;
+        len = scores.length;
         int j = 60;
         for(int i = 0;i < len;i ++){
            scores[i] = j;
@@ -30,6 +30,12 @@ public class CheckoutActivity {
 		if(s == 169 || s == 168 || s == 166 || s == 165 || s == 163 || s == 162 || s == 159){
 			holder = "No check out";
 			noOut = true;
+		} else {
+			for(int j = 0;j < scores.length;j ++){
+				if(s == scores[j]){
+					holder = checkout[j];
+				}
+			}
 		}
 
 		return holder;

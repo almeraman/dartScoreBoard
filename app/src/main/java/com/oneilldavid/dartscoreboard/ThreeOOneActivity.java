@@ -7,15 +7,16 @@ public class ThreeOOneActivity {
 
     private int cleg;
     private double cp1score,cp2score,cp1dartAvg,cp1throwAvg,cp2dartAvg,cp2throwAvg;
-    private String ccheck1,ccheck2,ccheck3;
+    private String checkout = "No check out";
     double i,l = 0;
     double j,k = 0;
+	CheckoutActivity co = new CheckoutActivity();
 
     public ThreeOOneActivity() {
-        this(301, 301, 1, 0.00, 0.00, 0.00, 0.00, "-", "-", "-");
+        this(301, 301, 1, 0.00, 0.00, 0.00, 0.00, "No check out");
     }
 
-    public ThreeOOneActivity(double s1,double s2,int l,double da1,double da2,double ta1,double ta2,String c1,String c2,String c3){
+    public ThreeOOneActivity(double s1,double s2,int l,double da1,double da2,double ta1,double ta2,String check){
         this.cp1score = s1;
         this.cp2score = s2;
         this.cleg = l;
@@ -23,9 +24,7 @@ public class ThreeOOneActivity {
         this.cp2dartAvg = da2;
         this.cp1throwAvg = ta1;
         this.cp2throwAvg = ta2;
-        this.ccheck1 = c1;
-        this.ccheck2 = c2;
-        this.ccheck3 = c3;
+		this.checkout = check;
     }
 
     public int getFirstVals(){
@@ -37,22 +36,34 @@ public class ThreeOOneActivity {
             setP1DartAvg(score);
             cp1score = cp1score - score;
             ScoreActivity.num_throw --;
+			if(cp1score < 171){
+				checkout = co.convertToCheckout((int)cp2score);
+			}
             if(numThrow == 1){
                 setP1ThrowAvg();
                 ScoreActivity.playerId = 2;
                 ScoreActivity.num_throw = 3;
-                ScoreActivity.changeToPlaya2();
+				if(cp2score < 171){
+				checkout = co.convertToCheckout((int)cp2score);
+				}
+                ScoreActivity.changeToPlaya2(checkout);
             }
             return (int)cp1score;
         } else {
             setP2DartAvg(score);
             cp2score = cp2score - score;
             ScoreActivity.num_throw --;
+			if(cp2score < 171){
+				checkout = co.convertToCheckout((int)cp2score);
+			}
             if(numThrow == 1){
                 setP2ThrowAvg();
                 ScoreActivity.playerId = 1;
                 ScoreActivity.num_throw = 3;
-                ScoreActivity.changeToPlaya1();
+				if(cp1score < 171){
+					checkout = co.convertToCheckout((int)cp1score);
+				}
+                ScoreActivity.changeToPlaya1(checkout);
             }
             return (int)cp2score;
         }

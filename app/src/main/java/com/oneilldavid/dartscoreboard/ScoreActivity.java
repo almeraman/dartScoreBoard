@@ -1,23 +1,22 @@
 package com.oneilldavid.dartscoreboard;
 
-import android.graphics.Color;
-import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.app.*;
+import android.graphics.*;
+import android.os.*;
+import android.view.*;
+import android.widget.*;
 
 /**
  * Created by david on 14/12/2015.
  */
-public class ScoreActivity extends ActionBarActivity {
+public class ScoreActivity extends Activity {
 
     Button num1,num2,num3,num4,num5,num6,num7,num8,num9,num10,num11,
             num12,num13,num14,num15,num16,num17,num18,num19,num20,num25,num50,miss,
             submit,times2,times3;
     private int score = 0;
-    TextView p1score,p2score,leg,p1dartAvg,p1throwAvg,p2dartAvg,p2throwAvg,check1,check2,check3;
-    static TextView playa1,playa2;
+    TextView p1score,p2score,leg,p1dartAvg,p1throwAvg,p2dartAvg,p2throwAvg;
+    static TextView playa1,playa2,check1;
     public static int num_throw = 3;
     public static int playerId = 1;
     ThreeOOneActivity to1;
@@ -73,11 +72,9 @@ public class ScoreActivity extends ActionBarActivity {
         p1throwAvg = (TextView) findViewById(R.id.p1throw_avg_change);
         p2throwAvg = (TextView) findViewById(R.id.p2throw_avg_change);
         check1 = (TextView) findViewById(R.id.check1);
-        check2 = (TextView) findViewById(R.id.check2);
-        check3 = (TextView) findViewById(R.id.check3);
         updateP1Score(to1.getFirstVals());
         updateP2Score(to1.getFirstVals());
-        changeToPlaya1();
+        changeToPlaya1("No check out");
     }
 
 
@@ -250,18 +247,20 @@ public class ScoreActivity extends ActionBarActivity {
         p2throwAvg.setText(""+String.format("%.2f",to1.getP2ThrowAvg()));
     }
 
-    public static void changeToPlaya1() {
+    public static void changeToPlaya1(String checkout) {
         playa1.setBackgroundColor(Color.WHITE);
         playa1.setTextColor(Color.BLACK);
         playa2.setBackgroundColor(Color.BLACK);
         playa2.setTextColor(Color.WHITE);
+		check1.setText(checkout);
     }
 
-    public static void changeToPlaya2() {
+    public static void changeToPlaya2(String checkout) {
         playa2.setBackgroundColor(Color.WHITE);
         playa2.setTextColor(Color.BLACK);
         playa1.setBackgroundColor(Color.BLACK);
         playa1.setTextColor(Color.WHITE);
+		check1.setText(checkout);
     }
 
 
