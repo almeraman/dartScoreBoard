@@ -18,11 +18,13 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:weightSum="1">
+
         <RelativeLayout
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/black"
-            android:layout_weight="1.09">
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/black">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -32,12 +34,14 @@
                 android:textColor="@android:color/white"
                 android:textStyle="normal|bold|italic"
                 android:contentDescription="@string/number_fields"
-                android:layout_marginRight="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
                 android:padding="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="30dp" />
+                android:layout_toRightOf="@+id/player1"
+                android:layout_toEndOf="@+id/player1" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -71,8 +75,8 @@
                 android:id="@+id/leg"
                 android:textColor="@android:color/white"
                 android:textStyle="normal|bold|italic"
-                android:layout_marginLeft="30dp"
-                android:layout_marginStart="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_alignTop="@+id/leg_change"
                 android:layout_alignParentLeft="true"
                 android:contentDescription="@string/number_fields"
@@ -150,12 +154,12 @@
                 android:textColor="@android:color/white"
                 android:textStyle="normal|bold|italic"
                 android:contentDescription="@string/number_fields"
-                android:layout_marginRight="26dp"
                 android:padding="5dp"
-                android:layout_above="@+id/p1_score"
-                android:layout_toLeftOf="@+id/player2"
-                android:layout_toStartOf="@+id/player2"
-                android:layout_marginEnd="26dp" />
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/p1_throw_avg"
+                android:layout_toEndOf="@+id/p1_throw_avg"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -221,6 +225,36 @@
                 android:layout_toRightOf="@+id/p1_score"
                 android:layout_alignRight="@+id/p2throw_avg_change"
                 android:layout_alignEnd="@+id/p2throw_avg_change" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dart1"
+                android:layout_alignTop="@+id/leg_change"
+                android:layout_toRightOf="@+id/leg_change"
+                android:layout_toEndOf="@+id/leg_change"
+                android:src="@drawable/single_dart"
+                android:layout_marginLeft="40dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dart2"
+                android:src="@drawable/single_dart"
+                android:layout_alignTop="@+id/dart1"
+                android:layout_toRightOf="@+id/dart1"
+                android:layout_toEndOf="@+id/dart1"
+                android:layout_marginLeft="10dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dart3"
+                android:src="@drawable/single_dart"
+                android:layout_alignTop="@+id/dart2"
+                android:layout_toRightOf="@+id/p1_throw_avg"
+                android:layout_toEndOf="@id/dart2"
+                android:layout_marginLeft="10dp" />
 
         </RelativeLayout>
 

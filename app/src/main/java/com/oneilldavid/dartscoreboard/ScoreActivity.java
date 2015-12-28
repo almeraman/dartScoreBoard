@@ -15,6 +15,7 @@ public class ScoreActivity extends Activity {
             num12,num13,num14,num15,num16,num17,num18,num19,num20,num25,num50,miss,
             submit,times2,times3;
     private int score = 0;
+    static ImageView dart1,dart2,dart3;
     TextView p1score,p2score,leg,p1dartAvg,p1throwAvg,p2dartAvg,p2throwAvg;
     static TextView playa1,playa2,check1;
     public static int num_throw = 3;
@@ -72,6 +73,9 @@ public class ScoreActivity extends Activity {
         p1throwAvg = (TextView) findViewById(R.id.p1throw_avg_change);
         p2throwAvg = (TextView) findViewById(R.id.p2throw_avg_change);
         check1 = (TextView) findViewById(R.id.check1);
+        dart1 = (ImageView) findViewById(R.id.dart1);
+        dart2 = (ImageView) findViewById(R.id.dart2);
+        dart3 = (ImageView) findViewById(R.id.dart3);
         updateP1Score(to1.getFirstVals());
         updateP2Score(to1.getFirstVals());
         changeToPlaya1("No check out");
@@ -228,10 +232,20 @@ public class ScoreActivity extends Activity {
 	}
 
     private void updateScores(double j) {
+
+        reduceDart();
         if(playerId == 1) {
             updateP1Score(to1.getReduceScore(playerId, j, num_throw));
         } else {
             updateP2Score(to1.getReduceScore(playerId, j, num_throw));
+        }
+    }
+
+    private void reduceDart() {
+        if(num_throw == 3){
+            dart3.setVisibility(View.INVISIBLE);
+        } else if(num_throw == 2){
+            dart2.setVisibility(View.INVISIBLE);
         }
     }
 
@@ -253,6 +267,9 @@ public class ScoreActivity extends Activity {
         playa2.setBackgroundColor(Color.BLACK);
         playa2.setTextColor(Color.WHITE);
 		check1.setText(checkout);
+        dart1.setVisibility(View.VISIBLE);
+        dart2.setVisibility(View.VISIBLE);
+        dart3.setVisibility(View.VISIBLE);
     }
 
     public static void changeToPlaya2(String checkout) {
@@ -261,8 +278,13 @@ public class ScoreActivity extends Activity {
         playa1.setBackgroundColor(Color.BLACK);
         playa1.setTextColor(Color.WHITE);
 		check1.setText(checkout);
+        dart1.setVisibility(View.VISIBLE);
+        dart2.setVisibility(View.VISIBLE);
+        dart3.setVisibility(View.VISIBLE);
     }
 
 
-
+    public static void updateCheckout(String checkout) {
+        check1.setText(checkout);
+    }
 }  //end class

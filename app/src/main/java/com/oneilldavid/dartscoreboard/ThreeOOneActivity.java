@@ -36,10 +36,10 @@ public class ThreeOOneActivity {
             setP1DartAvg(score);
             cp1score = cp1score - score;
             ScoreActivity.num_throw --;
-			if(cp1score < 171){
-				checkout = co.convertToCheckout((int)cp2score);
-			}
-            if(numThrow == 1){
+			if(numThrow == 3 && cp1score < 100){
+				checkout = co.convertToCheckout((int)cp1score);
+                ScoreActivity.updateCheckout(checkout);
+			} else if(numThrow == 1){
                 setP1ThrowAvg();
                 ScoreActivity.playerId = 2;
                 ScoreActivity.num_throw = 3;
@@ -53,10 +53,10 @@ public class ThreeOOneActivity {
             setP2DartAvg(score);
             cp2score = cp2score - score;
             ScoreActivity.num_throw --;
-			if(cp2score < 171){
-				checkout = co.convertToCheckout((int)cp2score);
-			}
-            if(numThrow == 1){
+            if(numThrow == 3 && cp2score < 100){
+                checkout = co.convertToCheckout((int)cp2score);
+                ScoreActivity.updateCheckout(checkout);
+            } else if(numThrow == 1){
                 setP2ThrowAvg();
                 ScoreActivity.playerId = 1;
                 ScoreActivity.num_throw = 3;
