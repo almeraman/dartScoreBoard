@@ -16,7 +16,7 @@ public class ScoreActivity extends Activity {
             submit,times2,times3;
     private int score = 0;
     static ImageView dart1,dart2,dart3;
-    TextView p1score,p2score,leg,p1dartAvg,p1throwAvg,p2dartAvg,p2throwAvg;
+    TextView p1score,p2score,leg,set,p1dartAvg,p1throwAvg,p2dartAvg,p2throwAvg;
     static TextView playa1,playa2,check1;
     public static int num_throw = 3;
     public static int playerId = 1;
@@ -28,7 +28,6 @@ public class ScoreActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score);
         to1 = new ThreeOOneActivity();
-
         assignButtons();
 
     }
@@ -68,6 +67,7 @@ public class ScoreActivity extends Activity {
         p1score = (TextView) findViewById(R.id.p1score_change);
         p2score = (TextView) findViewById(R.id.p2score_change);
         leg = (TextView) findViewById(R.id.leg_change);
+        set = (TextView) findViewById(R.id.set_change);
         p1dartAvg = (TextView) findViewById(R.id.p1dart_avg_change);
         p2dartAvg = (TextView) findViewById(R.id.p2dart_avg_change);
         p1throwAvg = (TextView) findViewById(R.id.p1throw_avg_change);
@@ -283,8 +283,14 @@ public class ScoreActivity extends Activity {
         dart3.setVisibility(View.VISIBLE);
     }
 
-
     public static void updateCheckout(String checkout) {
         check1.setText(checkout);
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        to1 = new ThreeOOneActivity();
+        assignButtons();
     }
 }  //end class

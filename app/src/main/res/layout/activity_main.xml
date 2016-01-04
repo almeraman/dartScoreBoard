@@ -22,9 +22,36 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/play"
+            android:src="@drawable/ic_launcher"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_sets"
+            android:spinnerMode="dropdown"
+            android:textColor="@android:color/white"
+            android:textStyle="normal|bold|italic"
+            android:background="@android:color/background_dark"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/how_many"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sets_prompt"
+            android:id="@+id/how_many"
+            android:textColor="@android:color/white"
+            android:textStyle="normal|bold|italic"
+            android:background="@android:color/background_dark"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="39dp"
-            android:src="@drawable/ic_launcher" />
+            android:padding="8dp" />
     </RelativeLayout>
 </RelativeLayout>
