@@ -15,8 +15,9 @@ public class ScoreActivity extends Activity {
             num12,num13,num14,num15,num16,num17,num18,num19,num20,num25,num50,miss,
             submit,times2,times3;
     private int score = 0;
+    int sets,game;
     static ImageView dart1,dart2,dart3;
-    TextView p1score,p2score,leg,set,p1dartAvg,p1throwAvg,p2dartAvg,p2throwAvg;
+    TextView p1score,p2score,leg,set,setAmmount,p1dartAvg,p1throwAvg,p2dartAvg,p2throwAvg;
     static TextView playa1,playa2,check1;
     public static int num_throw = 3;
     public static int playerId = 1;
@@ -27,7 +28,9 @@ public class ScoreActivity extends Activity {
         // set activity layout
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score);
-        to1 = new ThreeOOneActivity();
+        sets = getIntent().getIntExtra("numOfSets",1);
+        game = getIntent().getIntExtra("typeOfGame",301);
+        to1 = new ThreeOOneActivity(game, game, 1, 0.00, 0.00, 0.00, 0.00, "No check out");
         assignButtons();
 
     }
@@ -68,6 +71,7 @@ public class ScoreActivity extends Activity {
         p2score = (TextView) findViewById(R.id.p2score_change);
         leg = (TextView) findViewById(R.id.leg_change);
         set = (TextView) findViewById(R.id.set_change);
+        setAmmount = (TextView) findViewById(R.id.set_ammount);
         p1dartAvg = (TextView) findViewById(R.id.p1dart_avg_change);
         p2dartAvg = (TextView) findViewById(R.id.p2dart_avg_change);
         p1throwAvg = (TextView) findViewById(R.id.p1throw_avg_change);
@@ -79,6 +83,7 @@ public class ScoreActivity extends Activity {
         updateP1Score(to1.getFirstVals());
         updateP2Score(to1.getFirstVals());
         changeToPlaya1("No check out");
+        setAmmount.setText(""+sets);
     }
 
 
@@ -290,7 +295,7 @@ public class ScoreActivity extends Activity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        to1 = new ThreeOOneActivity();
+        to1 = new ThreeOOneActivity(game, game, 1, 0.00, 0.00, 0.00, 0.00, "No check out");
         assignButtons();
     }
 }  //end class

@@ -281,6 +281,32 @@
                 android:layout_alignLeft="@+id/set"
                 android:layout_alignStart="@+id/set" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/of"
+                android:id="@+id/of"
+                android:textColor="@android:color/white"
+                android:textStyle="normal|bold|italic"
+                android:contentDescription="@string/number_fields"
+                android:layout_below="@+id/set_change"
+                android:layout_alignLeft="@+id/set_change"
+                android:layout_alignStart="@+id/set_change" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one"
+                android:id="@+id/set_ammount"
+                android:textColor="@android:color/white"
+                android:textStyle="normal|bold|italic"
+                android:contentDescription="@string/number_fields"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:layout_below="@+id/of"
+                android:layout_alignLeft="@+id/of"
+                android:layout_alignStart="@+id/of" />
+
         </RelativeLayout>
 
     </LinearLayout>

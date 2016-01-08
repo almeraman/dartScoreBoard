@@ -5,6 +5,7 @@
     <string name="number_fields">Number Fields</string>
     <string name="leg">LEG</string>
     <string name="set">SET</string>
+    <string name="of">OF</string>
     <string name="player1">Player 1</string>
     <string name="player2">Player 2</string>
     <string name="score">Score :</string>
@@ -17,5 +18,6 @@
     <string name="threeOone">301</string>
     <string name="one">1</string>
     <string name="sets_prompt">How many sets?</string>
+    <string name="game_prompt">Which game?</string>
 
 </resources>
