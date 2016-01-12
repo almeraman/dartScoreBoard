@@ -97,6 +97,6 @@
             android:padding="8dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:text="@string/fiveOone" />
+            android:text="@string/title" />
     </RelativeLayout>
 </RelativeLayout>
