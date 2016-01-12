@@ -23,9 +23,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/play"
             android:src="@drawable/ic_launcher"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="70dp" />
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/spinner_game"
+            android:layout_centerHorizontal="true" />
 
         <Spinner
             android:layout_width="100dp"
@@ -50,9 +50,10 @@
             android:textColor="@android:color/white"
             android:textStyle="normal|bold|italic"
             android:background="@android:color/background_dark"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -65,7 +66,7 @@
             android:textColor="@android:color/white"
             android:textStyle="normal|bold|italic"
             android:background="@android:color/background_dark"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:padding="8dp" />
 
         <Spinner
@@ -78,11 +79,24 @@
             android:background="@android:color/background_dark"
             android:singleLine="true"
             android:gravity="center"
-            android:layout_marginTop="44dp"
+            android:layout_marginTop="20dp"
             android:layout_below="@+id/which_game"
             android:layout_alignRight="@+id/spinner_sets"
             android:layout_alignEnd="@+id/spinner_sets"
             android:layout_alignLeft="@+id/spinner_sets"
             android:layout_alignStart="@+id/spinner_sets" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/title"
+            android:textColor="@android:color/white"
+            android:textStyle="normal|bold|italic"
+            android:background="@android:color/background_dark"
+            android:padding="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/fiveOone" />
     </RelativeLayout>
 </RelativeLayout>
